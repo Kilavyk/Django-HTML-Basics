@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="d-flex">
+        <!-- Левое меню -->
+        <div class="d-flex flex-column p-3 bg-dark text-white" style="width: 250px; height: 100vh;">
+            <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                <strong>В</strong>&nbsp;<span>Меню</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li>
+                    <a href="category.html" class="nav-link active">Категории</a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link">Заказы</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropup">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="avatar.png" width="40" alt="avatar" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Основное содержимое -->
+
+    </div>
+
+    <!-- Подключаем Bootstrap JS Bundle с Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
