@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="d-flex">
+        <!-- Левое меню -->
+        <div class="d-flex flex-column p-3 bg-dark text-white" style="width: 250px; height: 100vh;">
+            <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                <strong>В</strong>&nbsp;<span>Меню</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li>
+                    <a href="category.html" class="nav-link">Категории</a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link active">Заказы</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropup">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="avatar.png" width="40" alt="avatar" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Основное содержимое -->
+        <div class="p-4 w-100">
+            <h1 class="text-center mb-5">Мои заказы</h1>
+
+            <div class="row g-4">
+                <!-- Карточка товара 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ноутбук игровой ASUS ROG</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">89 990 ₽</h6>
+                            <p class="card-text">
+                                17.3" FullHD, Intel Core i7, 16 ГБ ОЗУ, SSD 1 ТБ, NVIDIA RTX 3060
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Смартфон Samsung Galaxy S23</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">74 990 ₽</h6>
+                            <p class="card-text">
+                                6.1" Dynamic AMOLED, 128 ГБ, тройная камера, аккумулятор 3900 мАч
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Наушники Sony WH-1000XM5</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">29 990 ₽</h6>
+                            <p class="card-text">
+                                Беспроводные, с шумоподавлением, автономность до 30 часов
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Фитнес-браслет Xiaomi Band 7</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">3 490 ₽</h6>
+                            <p class="card-text">
+                                AMOLED-экран, мониторинг SpO2, 120 спортивных режимов
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Электронная книга PocketBook 740</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">24 990 ₽</h6>
+                            <p class="card-text">
+                                7.8" E Ink Carta 1200, сенсорный экран, подсветка, 32 ГБ
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Робот-пылесос Roborock S7</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">39 990 ₽</h6>
+                            <p class="card-text">
+                                Лазерная навигация, моющий модуль, автоматическая станция
+                            </p>
+                            <button class="btn btn-primary mt-auto">Повторить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Подключаем JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
