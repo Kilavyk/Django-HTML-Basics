@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="d-flex">
+        <!-- Левое меню -->
+        <div class="d-flex flex-column p-3 bg-dark text-white" style="width: 250px; height: 100vh;">
+            <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                <strong>В</strong>&nbsp;<span>Меню</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li>
+                    <a href="category.html" class="nav-link">Категории</a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link">Заказы</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link active">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropup">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="avatar.png" width="40" alt="avatar" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Основное содержимое -->
+        <div class="p-4 w-100">
+            <h1 class="text-center mb-5">Контакты</h1>
+
+            <div class="row g-4">
+                <!-- Форма обратной связи -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <form action="/contact.html" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Почта</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">@</span>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Напишите ваше сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Информация о контактах -->
+                <div class="col-md-6">
+                        <div class="card-body">
+                            <p>
+                                Мы тут, мы там, мы вообще везде! Ну ладно, не везде, но связаться с нами можно. Пишите, звоните, стучите в барабаны — главное, чтобы мы услышали. И да, мы не будем слать вам спам (честно-честно, только если очень попросите).
+                            </p>
+                            <p>
+                                А этот странный текст ниже — просто, чтобы заполнить место. Представьте, что здесь что-то умное про контакты:
+                            </p>
+                            <p>
+                                На самом деле, мы просто не придумали, что тут написать. Но если вам вдруг интересно, как связаться с нами (а мы верим, что интересно — ведь вы дочитали аж до этого места!) — оставьте свои данные, и мы торжественно обещаем с вами не связаться.
+                            </p>
+                            <p>
+                                P.S. Да, этот блок нельзя красиво оформить через CSS, но мы всё равно попробуем его приукрасить. Ну а если не выйдет — всегда можно написать "Ой, всё!" и сделать вид, что так и задумано.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

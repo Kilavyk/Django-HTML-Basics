@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="d-flex">
+        <!-- Левое меню -->
+        <div class="d-flex flex-column p-3 bg-dark text-white" style="width: 250px; height: 100vh;">
+            <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                <strong>В</strong>&nbsp;<span>Меню</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li>
+                    <a href="category.html" class="nav-link active">Категории</a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link">Заказы</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropup">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="avatar.png" width="40" alt="avatar" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Основное содержимое -->
+        <div class="p-4 w-100">
+            <h1 class="text-center mb-5">Каталог</h1>
+
+            <div class="row g-4">
+                <!-- Категория 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="text-center my-2">Смартфоны</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Широкий выбор современных смартфонов от ведущих производителей. У нас вы найдете устройства на любой вкус и бюджет - от бюджетных моделей до флагманов.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Смотреть</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Фильтры</a>
+                                </div>
+                                <small class="text-muted">Более 50 моделей</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Категория 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="text-center my-2">Ноутбуки</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Производительные ноутбуки для работы и развлечений. Игровые, ультрабуки, трансформеры - все для комфортной работы и отдыха.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Смотреть</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Фильтры</a>
+                                </div>
+                                <small class="text-muted">Более 30 моделей</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Категория 3 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="text-center my-2">Аксессуары</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Чехлы, наушники, зарядные устройства и другие аксессуары для ваших гаджетов. Только качественные аксессуары от проверенных брендов.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Смотреть</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Фильтры</a>
+                                </div>
+                                <small class="text-muted">Более 100 товаров</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Категория 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="text-center my-2">Телевизоры</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Современные телевизоры с высоким разрешением и smart-функциями. OLED, QLED, 4K и 8K модели от ведущих производителей.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Смотреть</a>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Фильтры</a>
+                                </div>
+                                <small class="text-muted">Более 20 моделей</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

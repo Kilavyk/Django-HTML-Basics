@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="d-flex">
+        <!-- Левое меню -->
+        <div class="d-flex flex-column p-3 bg-dark text-white" style="width: 250px; height: 100vh;">
+            <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                <strong>В</strong>&nbsp;<span>Меню</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                </li>
+                <li>
+                    <a href="category.html" class="nav-link">Категории</a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link">Заказы</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropup">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="avatar.png" width="40" alt="avatar" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- Основное содержимое -->
+        <div class="p-4 w-100">
+            <h1 class="text-center mb-4">Добро пожаловать!</h1>
+            <p class="lead text-center mb-5">Мы предлагаем широкий ассортимент качественных товаров по доступным ценам.</p>
+
+            <h2 class="mb-4">Популярные товары</h2>
+            <div class="row g-4">
+                <!-- Карточка товара 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Смартфон Premium X</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">35 990 ₽</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li>6.7" OLED дисплей</li>
+                                <li>128 ГБ памяти</li>
+                                <li>Тройная камера 48 МП</li>
+                                <li>Батарея 5000 мАч</li>
+                            </ul>
+                            <button class="btn btn-primary mt-auto">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ноутбук Ultra Slim</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">64 990 ₽</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li>15.6" FullHD экран</li>
+                                <li>Процессор Core i7</li>
+                                <li>16 ГБ оперативной памяти</li>
+                                <li>SSD 512 ГБ</li>
+                            </ul>
+                            <button class="btn btn-primary mt-auto">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Умные часы Pro</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">12 490 ₽</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li>Круглый AMOLED дисплей</li>
+                                <li>Мониторинг здоровья</li>
+                                <li>Водонепроницаемость</li>
+                                <li>До 14 дней работы</li>
+                            </ul>
+                            <button class="btn btn-primary mt-auto">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
